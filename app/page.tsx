@@ -1,12 +1,15 @@
 import Image from "next/image";
-import logo from '@/public/logo100x100.svg'
-import photo from '@/public/91261_web-development-lahore.jpg'
+import logo from '@/public/logo100x100.svg';
+import photo from '@/public/91261_web-development-lahore.jpg';
+import packar from '@/public/packarlogo.jpg';
+import cad from '@/public/cad.png';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <div className="flex justify-center border-b pb-4 w-full animate-bounce-3">
+    <div className="flex flex-col items-center justify-items-center bg-blue min-h-screen  pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
+      <div className="flex justify-center border-b p-8 pb-4 w-full">
       <Image
+          className="animate-bounce-3"
           src={logo}
           alt="Next.js logo"
           height={150}
@@ -28,11 +31,34 @@ export default function Home() {
         <Image
           src={photo}
           alt="pc"
-          className="rounded-full"
+          className="p-4 rounded-full"
           height={300}
           width={500}
           />
       </div>
+      <div className="bg-white text-black flex flex-col justify-center items-center w-full p-5">
+        <h1 className="text-xl">I'm delighted to have partnered with some remarkable organizations:</h1>
+        <div>
+          <div>
+            <Image
+              className=""
+              src={packar}
+              alt="Packar"
+              height={80}
+              width={100}
+              />
+          </div>
+          <div>
+            <Image
+              className=""
+              src={cad}
+              alt="CloudAndDigital"
+              height={80}
+              width={100}
+              />
+          </div>
+        </div>
+        </div>
     </div>
   );
 }

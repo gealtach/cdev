@@ -11,9 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        blue:'#111F43'
       },
       animation: {
-        'bounce-3': 'bounce-3 1s ease-in-out 3',
+        'bounce-3': 'bounce-3 2s ease-in-out 3',
         'slide-in-left': 'slideInLeft 2s ease-out'
       },
       keyframes: {
